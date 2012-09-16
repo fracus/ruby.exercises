@@ -1,4 +1,4 @@
 ruby.exercises
 ==============
 
-Ruby exercises for ROR training
+Ruby exercises for ROR training.
