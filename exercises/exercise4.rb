@@ -9,9 +9,7 @@ class Exercise4
     def cuentaLetras
         @letras.each_char do |i|
             @texto.each_char do |j|
-                if (i==j)
-                    @contadores[i]+=1
-                end
+                if (i==j) then @contadores[i]+=1 end
             end
         end
     end
