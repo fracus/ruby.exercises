@@ -2,17 +2,15 @@ class Exercise4
     def initialize(texto,letras)
         @texto = texto.downcase
         @letras = letras.downcase
-        @contadores = Hash[]
-        for k in @letras do
-            @contadores[k]=0
-        end
+        @contadores = {}
+        @letras.each_char{|clave| @contadores[clave]=0}
     end
 
     def cuentaLetras
-        for i in @letras do
-            for j in @texto do
-                if (@texto[j] == @letra[i])
-                    @contadores[i] += 1
+        @letras.each_char do |i|
+            @texto.each_char do |j|
+                if (i==j)
+                    @contadores[i]+=1
                 end
             end
         end
